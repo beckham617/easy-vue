@@ -2,10 +2,10 @@
   <div class="easy-alert" v-show="isShow">
     <div class="animated tada">
       <p>
-        hello vue ～
+        Create your own recipe!
       </p>
       <p @click="hideAlert">
-        确定
+        OK
       </p>
     </div>
   </div>

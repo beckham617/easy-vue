@@ -5,6 +5,7 @@
   infinite-scroll-distance="10">
     <div class="easy-card" v-for="res in results">
       <img :src="res.img" alt="">
+      <p style="old">{{res.title}}</p>
       <p>{{res.content}}</p>
       <div class="easy-card-user-info">
         <p>
@@ -86,6 +87,8 @@ export default {
 .easy-card > p{
   margin: 10px 10px;
 }
+
+
 
 .easy-card-loading{
   margin-bottom: 90px;

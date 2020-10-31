@@ -3,7 +3,7 @@
     <a class="icon icon-refresh pull-left" v-if="showRefeshIcon" @click="refresh"></a>
     <a class="icon icon-left-nav pull-left" v-if="showReturnIcon" @click="goBack"></a>
     <a class="icon icon-compose pull-right" v-if="showWriteIcon" @click="writeSome"></a>
-    <h1 class="title">hello vue</h1>
+    <h1 class="title">Yummy</h1>
   </header>
 </template>
 
@@ -14,7 +14,7 @@ export default {
       default: true
     },
     showReturnIcon: {
-      default: false
+      default: true
     },
     showWriteIcon: {
       default: true
