@@ -1,16 +1,16 @@
 <template>
   <nav class="bar bar-tab easy-bottom-bar">
-    <router-link class="tab-item" to="/">
-      <span class="icon fa fa-weixin" :class="{'easy-fa-color': isHome}"></span>
-      <span class="tab-label" :class="{'easy-fa-color': isHome}">home</span>
+    <router-link class="tab-item" to="/home">
+      <span class="icon fa fa-home" :class="{'easy-fa-color': isHome}"></span>
+      <span class="tab-label" :class="{'easy-fa-color': isHome}">Home</span>
     </router-link>
     <router-link class="tab-item" to="/lists">
-      <span class="icon icon-pages" :class="{'easy-fa-color': isList}"></span>
-      <span class="tab-label" :class="{'easy-fa-color': isList}">lists</span>
+      <span class="icon fa fa-heart" :class="{'easy-fa-color': isList}"></span>
+      <span class="tab-label" :class="{'easy-fa-color': isList}">Favorite</span>
     </router-link>
     <router-link class="tab-item" to="/option">
       <span class="icon icon-person" :class="{'easy-fa-color': isOption}"></span>
-      <span class="tab-label" :class="{'easy-fa-color': isOption}">option</span>
+      <span class="tab-label" :class="{'easy-fa-color': isOption}">Me</span>
     </router-link>
   </nav>
 </template>
@@ -25,7 +25,7 @@ export default {
   mounted: function() {
     this.$nextTick(function() {
       const uri = this.$route.path;
-      if (uri === '/') {
+      if (uri === '/home') {
         this.isHome = true;
         this.isList = false;
         this.isOption = false;

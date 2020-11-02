@@ -1,5 +1,5 @@
 <template>
-  <div class="center">
+  <div class="login">
     <p>Welcome to Yummy</p>
     <label for="email">Email</label>
     <input type="text" id="email" name="email" class="input" placeholder="Email" />
@@ -10,7 +10,7 @@
     
     <br/>
     <div style="">
-    <button>Log in</button> <button>Sign up</button>
+    <button class="easy-button">Log in</button> <button class="easy-button">Sign up</button>
     </div>
     <a href="#">Forget password</a>
     <alert></alert>
@@ -24,12 +24,12 @@ import barBottom from '../components/barBottom.vue';
 import alert from '../components/alert.vue';
 
 export default {
-  components: {
-    'bar-top': barTop,
-    'card': card,
-    'alert': alert,
-    'bar-bottom': barBottom,
-  },
+  // components: {
+  //   'bar-top': barTop,
+  //   'card': card,
+  //   'alert': alert,
+  //   'bar-bottom': barBottom,
+  // },
   methods:{
 
   }
@@ -37,14 +37,18 @@ export default {
 </script>
 
 <style>
-    div {
+       /* div {
         background-color: rgba(89, 207, 236, 0.699);
         padding: 20px;
         width: auto;
         height: auto;
     }
 
-
+    p{
+        font-size: 30px;
+       color:white
+    } */
+    
     .login {
         align-items: flex-start;
         align-self: center;
@@ -55,11 +59,8 @@ export default {
         align-items: center;
         background-color:  #19caad;
     }
-
-    p{
-        font-size: 30px;
-       color:white
-    }
+    
+ 
 
     input{
         width:150px;
