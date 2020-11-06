@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div style="height: 100%">
     <!-- set progressbar -->
     <vue-progress-bar></vue-progress-bar>
     <router-view></router-view>

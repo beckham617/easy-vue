@@ -5,7 +5,7 @@
   infinite-scroll-distance="10">
     <div class="easy-card" v-for="res in results">
       <img :src="res.img" alt="">
-      <p style="old">{{res.title}}</p>
+      <p style="font:bold">{{res.title}}</p>
       <p>{{res.content}}</p>
       <div class="easy-card-user-info">
         <p>

@@ -42,10 +42,10 @@
         </router-link>
       </li>
       <li class="table-view-cell media">
-        <router-link class="navigate-right" to="/detail">
+        <router-link class="navigate-right" to="/">
           <span class="media-object pull-left icon icon-more"></span>
           <div class="media-body">
-            This ia a button
+            Exit
           </div>
         </router-link>
       </li>

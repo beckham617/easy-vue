@@ -2,7 +2,7 @@
   <div class="easy-alert" v-show="isShow">
     <div class="animated tada">
       <p>
-        Create your own recipe!
+        {{alertTitle}}
       </p>
       <p @click="hideAlert">
         OK
@@ -15,6 +15,7 @@
 import { mapState } from 'vuex';
 
 export default {
+  props: ["onDismiss","alertTitle"],
   data: () => ({
     // isShow: false
   }),
@@ -23,12 +24,13 @@ export default {
   },
   methods: {
     hideAlert: function () {
+      if (this.onDismiss && typeof this.onDismiss === "function") this.onDismiss();
       this.$store.commit('isShowAlert', false);
     }
   },
-  computed: mapState({
-    isShow: state => state.isShow,
-  }),
+  computed: {
+    isShow() { return this.$store.state.isShow }
+  }
 }
 </script>
 

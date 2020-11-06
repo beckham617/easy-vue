@@ -28,6 +28,7 @@ const mutations = {
     state.cardData = data;
   },
   isShowAlert(state, data) {
+    alert(data);
     state.isShow = data;
   },
 };
