@@ -22,7 +22,8 @@ export default {
   },
   methods:{
     writeSome: function() {
-      this.$store.commit('isShowAlert', true);
+      // this.$store.commit('isShowAlert', true);
+      this.$router.push("/createRecipe");
     },
     refresh: function() {
       this.$store.dispatch('getData', {

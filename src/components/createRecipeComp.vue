@@ -1,6 +1,6 @@
 <template>
   <div class="registerComp">
-    <p class="registerTitle">Please enter the information to register:</p>
+    <p class="registerTitle">Create new recipe:</p>
     <md-field>
       <label>Email</label>
       <md-input v-model="initial"></md-input>
@@ -84,6 +84,5 @@ export default {
         border: 2px;
         border:rgb(243, 28, 28);
         align-items: center;
-        background-color:  #19caad;
     }
 </style>

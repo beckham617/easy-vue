@@ -4,7 +4,9 @@
   infinite-scroll-disabled="busy"
   infinite-scroll-distance="10">
     <div class="easy-card" v-for="res in results">
-      <img :src="res.img" alt="">
+      <router-link class="navigate-right" to="/detail">
+        <img :src="res.img" alt="">
+      </router-link>
       <p style="font:bold">{{res.title}}</p>
       <p>{{res.content}}</p>
       <div class="easy-card-user-info">

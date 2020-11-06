@@ -28,7 +28,6 @@ const mutations = {
     state.cardData = data;
   },
   isShowAlert(state, data) {
-    alert(data);
     state.isShow = data;
   },
 };
@@ -36,7 +35,7 @@ const mutations = {
 const actions = {
   getData(context, object) {
     const {progress, isRefresh} = object;
-	const mutationName = isRefresh === true ? 'refreshData' : 'addData';
+	  const mutationName = isRefresh === true ? 'refreshData' : 'addData';
     progress.$Progress.start();
     context.commit('updateLoadingState', false);
     context.commit('updateBusyState', true);
