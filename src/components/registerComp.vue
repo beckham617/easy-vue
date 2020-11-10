@@ -1,6 +1,6 @@
 <template>
-  <div class="registerComp">
-    <p class="registerTitle">Please enter the information to register:</p>
+  <div class="register-comp">
+    <p class="register-title">Register</p>
     <md-field>
       <label>Email</label>
       <md-input v-model="initial"></md-input>
@@ -25,8 +25,10 @@
     
     <br/>
     <div class="login-comp-button">
+      <router-link to="/">
+        <md-button class="md-raised">Cancel</md-button>
+      </router-link>
       <md-button class="md-raised" @click="submit = true">Submit</md-button>
-      <!-- <button class="easy-button" @click="showAlert">Submit</button> -->
     </div>
 
     <md-dialog-alert
@@ -58,7 +60,7 @@ export default {
   },
   methods:{
       showAlert: function() { 
-        first = true;
+        this.submit = true;
         // this.$store.commit("isShowAlert", true) 
       },
       toLogin: function() { 
@@ -68,14 +70,14 @@ export default {
 </script>
 
 <style>
-    .registerTitle{
+    .register-title{
         align-self: center;
         font-family: 'Hind', sans-serif;
         /* font-family: 'Source Sans Pro', sans-serif; */
-        font-size: 15px;
-        color: rgb(255, 255, 255);
+        font-size: 20px;
+        color: black;
     }
-    .registerComp {
+    .register-comp {
         width: 300px;
         align-items: flex-start;
         align-self: center;

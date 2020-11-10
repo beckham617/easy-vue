@@ -34,6 +34,7 @@
     <br/>
     
     <a class="login-comp-text" href="#">Forget password</a>
+    
     <alert></alert>
   </div>
 </template>
@@ -93,20 +94,10 @@ export default {
         font-family: 'Hind', sans-serif;
         /* font-family: 'Source Sans Pro', sans-serif; */
         font-size: 15px;
-        color: rgb(255, 255, 255);
+        color: white;
         text-decoration: underline;
     }
 
 
-  
-
-    a{
-         text-decoration: underline;
-    }
-
-    button {
-        width: 80px;
-        margin: 5px;
-    }
 
 </style>

@@ -20,7 +20,7 @@ const routes = [
   { path: '/option', component: Option },
   { path: '/detail', component: Detail },
   { path: '/register', component: Register },
-  { path: '/createRecipe', component: Register },
+  { path: '/createRecipe', component: CreateRecipe },
 ];
 
 const router = new VueRouter({routes});

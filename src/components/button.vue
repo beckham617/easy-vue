@@ -5,11 +5,11 @@
         <router-link class="navigate-right" to="/detail">
           <span class="media-object pull-left icon icon-person"></span>
           <div class="media-body">
-            This ia a button
+            Profile
           </div>
         </router-link>
       </li>
-      <li class="table-view-cell media">
+      <!-- <li class="table-view-cell media">
         <router-link class="navigate-right" to="/detail">
           <span class="media-object pull-left icon icon-gear"></span>
           <div class="media-body">
@@ -40,10 +40,10 @@
             This ia a button
           </div>
         </router-link>
-      </li>
+      </li> -->
       <li class="table-view-cell media">
         <router-link class="navigate-right" to="/">
-          <span class="media-object pull-left icon icon-more"></span>
+          <span class="media-object pull-left fa fa-sign-out fa-2x"></span>
           <div class="media-body">
             Exit
           </div>

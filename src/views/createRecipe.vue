@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="create-recipe">
     <bar-top
     :show-refesh-icon="false"
     :show-return-icon="true"
@@ -24,5 +24,11 @@ export default {
 </script>
 
 <style>
-
+.create-recipe {
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    background-color: #19caad;
+  }
 </style>
