@@ -5,55 +5,59 @@
       <md-input v-model="initial"></md-input>
     </md-field>
 
-    <md-field>
+    <md-field style="background:#1fdbbce1">
       <label>Description</label>
       <md-textarea v-model="textarea"></md-textarea>
     </md-field>
     
-    <p class="create-recipe-title">Ingredients</p>
+    
 
-    <div class="create-recipe-ingredients-item">
-      <md-field>
-        <label>Servings</label>
-        <md-input v-model="number" type="number"></md-input>
-      </md-field>
-    </div>
+    <div  class="create-recipe-ingredients-section">
+      <p class="create-recipe-title">Ingredients</p>
 
-    <div class="create-recipe-ingredients">
       <div class="create-recipe-ingredients-item">
-        <md-field >
-          <label for="ingredient">Ingredient</label>
-          <md-input name="ingredient" id="ingredient" />
+        <md-field>
+          <label>Servings</label>
+          <md-input v-model="number" type="number"></md-input>
         </md-field>
       </div>
-      <div class="create-recipe-ingredients-item">
-        <md-field >
-          <label for="quantity">Quantity</label>
-          <md-input name="quantity" id="quantity" />
-        </md-field>
+      <div class="create-recipe-ingredients">
+        <div class="create-recipe-ingredients-item">
+          <md-field >
+            <label for="ingredient">Ingredient</label>
+            <md-input name="ingredient" id="ingredient" />
+          </md-field>
+        </div>
+        <div class="create-recipe-ingredients-item">
+          <md-field >
+            <label for="quantity">Quantity</label>
+            <md-input name="quantity" id="quantity" />
+          </md-field>
+        </div>
       </div>
+      <a class="create-recipe-ingredients-text" href="#" @click="addIngredients">Add ingredient</a>
     </div>
-    <a class="create-recipe-ingredients-text" href="#" @click="addIngredients">Add ingredient</a>
-
     <br/><br/>
 
-    <p class="create-recipe-title">Preparation steps</p>
+    <div  class="create-recipe-ingredients-section">
+        <p class="create-recipe-title">Preparation steps</p>
 
-    <div class="create-recipe-ingredients">
-      <div class="create-recipe-preparation-item">
-        <md-button class="md-icon-button md-raised" style="color: black">
-          <span class="media-object fa fa-plus fa-lg"></span>
-        </md-button>
-      </div>
-      <div class="create-recipe-preparation-item">
-        <md-field>
-          <label>Description</label>
-          <md-textarea v-model="textarea" md-autogrow="true"></md-textarea>
-        </md-field>
-      </div>
+        <div class="create-recipe-ingredients">
+          <div class="create-recipe-preparation-item">
+            <md-button class="md-icon-button md-raised" style="color: black">
+              <span class="media-object fa fa-plus fa-lg"></span>
+            </md-button>
+          </div>
+          <div class="create-recipe-preparation-item">
+            <md-field>
+              <label>Description</label>
+              <md-textarea v-model="textarea" md-autogrow="true"></md-textarea>
+            </md-field>
+          </div>
+        </div>
+        <a class="create-recipe-ingredients-text" href="#">Add steps</a>
     </div>
-    <a class="create-recipe-ingredients-text" href="#">Add steps</a>
-    
+
     <br/>
     <div class="login-comp-button">
       <md-button class="md-raised" @click="submit = true">Submit</md-button>
@@ -120,6 +124,11 @@ export default {
         align-items: center;
         background-color:  #19caad;
     }
+    .create-recipe-ingredients-section{
+      padding: 10px;
+      background-color:  #1fdbbce1;
+    }
+
     .create-recipe-ingredients{
       display: flex;
       flex-wrap: nowrap;
